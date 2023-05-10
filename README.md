@@ -1,3 +1,7 @@
+# Display your Spotify listening activity and stats in a unique way!
+
+## Follow below steps to get started!
+
 # Spotify API
 
 * Create a [Spotify Application](https://developer.spotify.com/dashboard/applications)
