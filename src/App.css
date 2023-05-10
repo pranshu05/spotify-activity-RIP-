@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+/* Default CSS start */
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-weight: 400;
+  background-color: #121212;
+  color: #eeeeee;
+  transition: 0.7s ease-in-out;
 }
+.highlight {
+  background-color: #181818;
+  color: #dbb3fe;
+}
+a,
+li,
+button,
+ul {
+  line-height: normal;
+  text-decoration: none;
+}
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #dbb3fe;
+}
+/* Default CSS End*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Spotify Start*/
+.spotify-track {
+  display: flex;
+  flex-direction: row;
+  background: #181818;
+  border-radius: 10px;
+  max-width: 350px;
+  padding: 5px;
+  margin: 0 auto;
+}
+.song-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  float: right;
+  width: calc(80% - 10px);
+  padding-left: 10px;
 }
+.song-title {
+  font-size: medium;
+  font-weight: 700;
+}
+.song-artist {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.song-img {
+  width: 20%;
+  float: left;
+}
+.song-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+/** Spotify End/
 
-.App-link {
-  color: #61dafb;
+/*Music Page Start*/
+.music-page-cont {
+  width: 65vw;
+  left: 50%;
+  margin-top: 50px;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  padding: 20px;
 }
+.music-page-cont h1 {
+  font-size: 200%;
+  font-weight: 900;
+  margin: 10px 10px 10px 0;
+}
+.music-page-cont p {
+  margin-top: 20px;
+  font-size: large;
+  color: #f2f2f2;
+}
+.top-tracks-cont,.top-artists-cont, .recently-played-cont{
+  width: 100%;
+  background-color: #181818;
+  min-height: 100px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.top-tracks-div,.top-artists-div,.recently-played-div{
+  background-color: #121212;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.top-tracks-text,.top-artists-text,.recently-played-text{
+  width: 80%;
+  float: left;
+  padding: 10px;
+}
+.top-tracks-plays,.top-artists-plays,.recently-played-time{
+  width: 20%;
+  float: right;
+  text-align: right;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .music-page-cont {
+    width: 90vw;
+    padding: 0;
+  }
+  .recently-played-time,.top-tracks-plays,.top-artists-plays{
+    display: none;
+  }
+  .recently-played-text,.top-tracks-text,.top-artists-text{
+    width: 100%;
+  }
+}
+/*Music page End*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Webkit Style Start*/
+::-webkit-scrollbar {
+  display: none;
 }
+body{
+  -webkit-user-select: none; 
+  -ms-user-select: none;
+  user-select: none;
+}
+/*Webkit Style End*/
+
+
+
+/*I just love you!! Thanks for scrolling <3*/
